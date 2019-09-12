@@ -407,15 +407,15 @@ public class Blocks implements ContentList{
         //region crafting
 
         graphitePress = new GenericCrafter("graphite-press"){{
-            requirements(Category.crafting, ItemStack.with(Items.copper, 75, Items.lead, 30));
+            requirements(Category.crafting, ItemStack.with(Items.copper, 1, Items.lead, 1));
 
             craftEffect = Fx.pulverizeMedium;
-            outputItem = new ItemStack(Items.graphite, 1);
-            craftTime = 90f;
+            outputItem = new ItemStack(Items.graphite, 10);
+            craftTime = 10f;
             size = 2;
             hasItems = true;
 
-            consumes.item(Items.coal, 2);
+            consumes.item(Items.coal, 1);
         }};
 
         multiPress = new GenericCrafter("multi-press"){{
